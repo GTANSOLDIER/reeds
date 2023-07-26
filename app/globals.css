@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,14 +14,124 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white;
+}
+
+.header {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 2px;
+}
+.reedsHeaderImg {
+  width: 130px;
+}
+.Hamburger {
+  position: absolute;
+  right: 20px;
+}
+.Hamburger div {
+  width: 20px;
+  height: 4px;
+  background-color: black;
+  margin-bottom: 3px;
+}
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .bigTxt {
+  padding: 40px;
+} */
+/* .bigBodyTxt {
+  font-weight: bold;
+  font-size: 55px;
+  padding-left: 25px;
+  line-height: 28%;
+} */
+.bigTxt {
+  padding: 60px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bigBodyTxt {
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 28%;
+}
+.motionImg {
+  width: 210px;
+  @apply md:w-[320px];
+}
+#writeup {
+  text-align: center;
+  padding: 30px 20px;
+
+  @apply md:text-left md:p-0;
+}
+.mainIllustration {
+  padding-bottom: 30px;
+  @apply md:p-0 md:max-w-[720px];
+}
+#messageBtn {
+  background-color: #ff0303;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+#watchBtn {
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+
+.mobileMenu a{
+  @apply border-b border-white py-4 inline-block w-full;
+  animation: fadeIn .52s  ease-in forwards;
+}
+
+.mobileMenu a:nth-child(4) {
+  @apply border border-white md:border-black md:border w-[65%] mt-20 md:mt-0 self-center rounded-full md:hidden text-center px-4 py-3 md:py-2;
+}
+
+.mobileMenuOverlay {
+  @apply absolute top-0 left-0 w-[30%] h-[100vh] bg-[rgba(0,0,0,0.45)];
+}
+
+.mobileMenuOverlay {
+  animation: fadeIn .5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+   
+  }
+  50% {
+  
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.mobileMenuAnimation {
+  animation: slideLeft .25s ease-in forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
 }
