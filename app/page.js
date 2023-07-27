@@ -4,7 +4,7 @@ import Image from "next/image";
 import reedsTxt from "../assets/reedswebsite.png";
 import motionTxt from "../assets/motion txt.png";
 import mainIllustration from "../assets/main illlustration.png";
-import videoIcon from "../assets/videoIcon.png";
+import videoIcon from "../assets/video.png";
 
 import {RxHamburgerMenu} from "react-icons/rx"
 import {AiOutlineClose} from "react-icons/ai"
