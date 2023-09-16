@@ -27,10 +27,10 @@ export default function Home() {
         </div>
         <div className={`${isMenuOpen ? 'mobileMenuOverlay' : 'hidden' } `}></div>
         <div className={`${isMenuOpen ? ' text-lg text-white items-start text-left px-5 flex flex-col gap-8  pt-40 bg-[rgba(0,0,0,0.9)] w-[70%] h-[100vh] absolute top-0 right-0 mobileMenuAnimation': 'hidden'} mobileMenu z-20 md:flex md:flex-row  md:items-center md:gap-10 md:-ml-32 md:static md:h-0 `}>
-          <a href=""> Instagram </a>
-          <a href=""> Whatsapp </a>
-          <a href=""> Tik-Tok</a>
-          <a href="" className=""> Call </a>
+          <a href="https://instagram.com/reeds.ng"> Instagram </a>
+          <a href="https://wa.me/+2349039846349"> Whatsapp </a>
+          <a href="https://www.tiktok.com/@reeds.ng"> Tik-Tok</a>
+          <a href="tel:+2349039846349" className=""> Call </a>
         </div>
         <div className="hidden md:block">
           <a href="" className=" md:border-black md:border  rounded-full text-center px-8 hidden md:block md:ml-auto py-3 md:py-2">Call</a>
